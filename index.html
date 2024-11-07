@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrícuLo personal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header .profile-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .header .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .header .profile-photo:hover {
+            transform: scale(1.1);
+        }
+        .header .info {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .header .info h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .section h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .contact-info i {
+            margin-right: 10px;
+            color: #007BFF;
+        }
+        .contact-info p, .education-info p {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    }
+    button:hover {
+    background-color: #0056b3;
+    }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="profile-photo">
+                <img src="BANCO DE FOTOS/foto de perfil.jpg" alt="Foto de perfil">
+            </div>
+            <div class="info">
+                <h1>Jonathan Ariel Arevalo Martinez</h1>
+                <p>Edad: 17 años</p>
+                <p>Lugar: El Salvador, Sonsonate</p>
+                <p>Fecha de nacimiento: 22/06/2007</p>
+            </div>
+        </div>
+        <div class="section contact-info">
+            <h2>Contacto</h2>
+            <p><i class="fas fa-phone"></i> Teléfono: +503 6013-8000</p>
+            <p><i class="fas fa-envelope"></i> Correo: arevalojonathan139@gmail.com</p>
+        </div>
+        <div class="section education-info">
+            <h2>Educación</h2>
+            <p><i class="fas fa-graduation-cap"></i> Bachillerato general con diplomado en software</p>
+            <p><i class="fas fa-school"></i>  Colegio Bautista Internacional de Sonsonate</p>
+        </div>
+        <div class="section">
+            <h2>Experiencias</h2>
+            <p>- He tenido la experiencia de trabajar en equipo en un proyecto  con 3 compañero y hicimos una aplicacion web progresiva, esta aplicacion web era para la sistematizacion de horas del servicio social para la institución, con el objetivo de resolver una problematica que tenian los estudiantes de bachillerato de la institucion. Este proyecto esta en mi portafolio.</p>
+            <p>- Otra experiencia es la creacion de una pagina web para un emprendimiento que creamos con un compañero, el propósito de esta pagina es que los clientes puedan ver los productos que vendiamos y los precios y contactos para podernos contactar directamente.Este proyecto esta en mi portafolio</p>
+        </div>
+        <div class="section">
+            <h2>Portafolio</h2>
+            <p>Proyectos mas destacados:<i class="fa-brands fa-github"></i></p>
+            <button onclick="location.href='portafolio.html'">Ver Portafolio</button>
+
+        </div>
+        <div class="section">
+            <h2>Diplomados y Cursos</h2>
+            <p>- Diplomado en Matematica Basica (2022)</p>
+            <p>- Diplomado en Participacion de Concurso de Bachiller Emprendedor (2024)</p>
+            <p>- Certificado de Diseño web con HTML5 (2024)</p>
+            <P>- Certificado de Proyecto Eco Apps(version 2) (2024)</P>
+            <p>- Certificado de Diseño 3D</p>
+            <button onclick="location.href='diplomados-y-cursos.html'">Ver Diplomados y Cursos</button>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplomados y Cursos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .photo-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .photo-grid img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+        }
+        .modal:target {
+            display: flex; /* Show modal when targeted */
+        }
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .close-btn:hover {
+            color: #ff0000;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+    button:hover {
+    background-color: #0056b3;
+    }
+
+    </style>
+    <button onclick="location.href='index.html'">Volver</button>
+</head>
+<body>
+    <div class="container">
+        <h1>Diplomados y Cursos</h1>
+        <div class="photo-grid">
+            <!-- Images wrapped in anchor tags linking to modals -->
+            <a href="#img1"><img src="BANCO DE FOTOS/diplomado 1.jpg" alt="Diploma 1"></a>
+            <a href="#img2"><img src="BANCO DE FOTOS/diploma 2.jpg" alt="Diploma 2"></a>
+            <a href="#img3"><img src="BANCO DE FOTOS/certificado 1.jpg" alt="Diploma 3"></a>
+            <a href="#img4"><img src="BANCO DE FOTOS/certificado 2.jpg" alt="Diploma 4"></a>
+            <a href="#img5"><img src="BANCO DE FOTOS/reconocimiento 1.jpg" alt="Diploma 5"></a>
+            <a href="#img6"><img src="BANCO DE FOTOS/reconocimiento 2.jpg" alt="Diploma 6"></a>
+            <a href="#img7"><img src="BANCO DE FOTOS/certificado 3.png" alt="Diploma 7"></a>
+        </div>
+        
+        <!-- Modals for full-size images with close button -->
+        <div id="img1" class="modal">
+            <a href="#" class="close-btn">&times;</a>
+            <img src="BANCO DE FOTOS/diplomado 1.jpg" alt="Diploma 1">
+        </div>
+        <div id="img2" class="modal">
+            <a href="#" class="close-btn">&times;</a>
+            <img src="BANCO DE FOTOS/diploma 2.jpg" alt="Diploma 2">
+        </div>
+        <div id="img3" class="modal">
+            <a href="#" class="close-btn">&times;</a>
+            <img src="BANCO DE FOTOS/certificado 1.jpg" alt="Diploma 3">
+        </div>
+        <div id="img4" class="modal">
+            <a href="#" class="close-btn">&times;</a>
+            <img src="BANCO DE FOTOS/certificado 2.jpg" alt="Diploma 4">
+        </div>
+        <div id="img5" class="modal">
+            <a href="#" class="close-btn">&times;</a>
+            <img src="BANCO DE FOTOS/reconocimiento 1.jpg" alt="Diploma 5">
+        </div>
+        <div id="img6" class="modal">
+            <a href="#" class="close-btn">&times;</a>
+            <img src="BANCO DE FOTOS/reconocimiento 2.jpg" alt="Diploma 6">
+        </div>        <div id="img7" class="modal">
+            <a href="#" class="close-btn">&times;</a>
+            <img src="BANCO DE FOTOS/certificado 3.png" alt="Diploma 7">
+        </div>
+    </div>
+</body>
+</html>
